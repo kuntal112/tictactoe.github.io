@@ -1,7 +1,8 @@
-let container = document.querySelector(".container");
-let counter = 0;
-const restartbtn=document.querySelector(".rs")
+const container = document.querySelector(".container");
+const boardBlocker=document.querySelector(".bw")
+const restartbtn=document.querySelector("#restartbtn")
 restartbtn.addEventListener("click",restart)
+let counter = 0;
 // this function will fire when we click any one of the boxes
 function mark(e) {
     let clickedBox = document.getElementById(e.target.id);
@@ -47,7 +48,7 @@ function mark(e) {
 }
 // block the board 
 function gameEnd(){
-    restartbtn.classList.add("restart");
+    boardBlocker.classList.add("blockWindow");
 }
 // to restart the game
 function restart(){

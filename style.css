@@ -10,6 +10,7 @@ body{
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    background-image: linear-gradient(to right top, #3b6fbc, #6b66b8, #8f5aad, #ab4d99, #bf4180);
 }
 .sq{
     background-color: rgba(188, 248, 218, 0.432);
@@ -25,7 +26,7 @@ body{
 }
 p,h2{
     margin-bottom: 10px;
-    color: rgb(114, 20, 20);
+    color: rgb(248, 248, 248);
 }
 .container
 {
@@ -34,13 +35,23 @@ p,h2{
     flex-wrap: wrap;
     position: relative;
 }
-.restart{
+.blockWindow{
     background-color: rgba(0, 0, 255, 0.253);
     z-index: 10;
-}
-.rs{
-    position: absolute;
     height: 100%;
     width: 100%;
+}
+#restartbtn{
+    height: 30px;
+    width: 100px;
+    margin-top: 30px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(223, 155, 9);
+    font-weight: bolder;
+}
+.bw{
+    position: absolute;
+    top: 0;
     text-align: center;
 }
